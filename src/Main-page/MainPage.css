@@ -1,0 +1,56 @@
+.advantage {
+    display: flex;
+    gap: 1em;
+    max-width: 800px;
+}
+
+.advantage > .description > a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.advantage > .description > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+}
+.advantage:nth-child(1) {
+    align-self: flex-start;
+}
+.advantage:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+.advantage:nth-child(3) {
+    align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+    .advantage:nth-child(1), .advantage:nth-child(2), .advantage:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .advantage > img {
+        width: 100%;
+    }
+    .advantage{
+        width: 100%;
+    }
+}
+
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 2em;
+}

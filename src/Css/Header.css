@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav > .logotype > h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+nav > .menu > a {
+    font-family: 'Inter';
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.575rem;
+    line-height: 2.25rem;
+}
+
+
+
+.menu {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.logotype {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.language {
+    background-color: rgb(255, 102, 0);
+}

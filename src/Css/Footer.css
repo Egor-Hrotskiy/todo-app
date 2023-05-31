@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    background-color: black;
+}
+footer > .footer-links > * {
+    font-family: 'Inter';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.575rem;
+    line-height: 2.25rem;
+    color: white;
+}
+
+footer > .footer-links > *:hover {
+    color: rgb(138, 12, 216);
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.switch-theme {
+    color: white;
+    border: 0px;
+    border-radius: 2em;
+    padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.switch-theme:hover {
+    cursor: pointer;
+}

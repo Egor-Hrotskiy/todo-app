@@ -1,0 +1,271 @@
+
+
+.notesPart {
+    flex: 1;
+    display: flex;
+    padding: 1.35em;
+    width: 100%;
+}
+
+@media (max-width: 1150px) {
+    .notesPart {
+        padding: 1em;
+    }
+}
+
+.editBar, .notesList {
+    height: 100%;
+}
+
+.editBar {
+    width: 55%;
+    display: flex;
+    gap: 1em;
+    margin-left: auto;
+}
+
+.notesList {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+    max-height: 65vh;
+    gap: .4em;
+    padding: .5em;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid ;
+    border-radius: 1em;
+    padding: .5em 1.5em;
+}
+
+.options {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: .15em;
+    cursor: pointer;
+}
+
+.note > h3 {
+    cursor: pointer;
+}
+
+.nameInput, .noteTextInput {
+    border: 2px solid;
+    border-radius: .7em;
+    resize: none;
+}
+
+.nameInput {
+    font-size: 26px;
+    padding: .5em;
+    width: 100%;
+}
+
+.editedNote {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: .2em;
+}
+
+@media (max-width: 1100px) {
+    .editedNote {
+        width: 80%;
+    }
+}
+
+.markdownPreview {
+    width: 100%;
+    padding: 1em;
+    border-radius: .7em;
+    border: 1px solid;
+    display: inline-block;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.noteTextInput {
+    width: 100%;
+    padding: 1em;
+}
+
+.lastDate {
+    font-size: 18px;
+    text-align: center;
+}
+
+.finishBtn {
+    padding: .5em 1.5em;
+    border-radius: 1em;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.editBtn, .prevBtn {
+    padding: .5em 1.5em;
+    border-radius: .6em;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.jad-1 {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: .5em;
+}
+
+.createButton {
+    max-width: 50%;
+    display: flex;
+    padding: .5em 1.5em;
+    border-radius: 1em;
+    color: white;
+    position: sticky;
+    top: 0;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.plus {
+    font-size: 30px;
+    margin-left: auto;
+}
+
+.toolIcon {
+    padding: .6em;
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+    align-items: center;
+    border-radius: .7em;
+    cursor: pointer;
+}
+
+.toolBar {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.closeBtn {
+    cursor: pointer;
+}
+
+.adjustMenu {
+    display: flex;
+}
+
+
+
+@media (max-width: 900px) {
+    .adjustMenu {
+        flex-direction: column;
+        gap: .2em;
+    }
+    .adjustMenu > .jad-1 > input {
+    max-width: 70px;
+    }
+    .editBar {
+        flex-direction: column;
+    }
+    .editedNote {
+        width: 100%;
+    }
+    .toolBar {
+        flex-direction: row;
+        gap: 2.5em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .notesList {
+        width: 50%;
+    }
+    .editBar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    .notesPart {
+        display: flex;
+        flex-direction: column;
+    }
+    .note {
+        padding: .2em .5em;
+    }
+    .editBar {
+        width: 100%;
+    }
+    .notesList {
+        width: 100%;
+    }
+    .toolBar {
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .notesPart {
+        padding: .3em;
+        gap: .1em;
+    }
+    .notesList {
+        padding: .1em;
+    }
+    .editBar {
+        gap: .3em;
+    }
+    .editedNote {
+        gap: .2em;
+    }
+}
+
+.alertText {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.alertMessage {
+    padding: 0.5em 1.5em;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 5em;
+    border-radius: 1.1em;
+    position: fixed;
+    right: 40%;
+    top: 5%;
+    z-index: 2;
+}
+
+progress {
+    width: 100%;
+}
+
+.alertContent {
+    display: flex;
+    gap: .4em;
+}

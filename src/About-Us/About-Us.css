@@ -1,0 +1,23 @@
+.aboutText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 60ch;
+}
+
+.aboutUs {
+    display: grid;
+    padding: 0.5em;
+    place-content: center;
+    flex: 1;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
