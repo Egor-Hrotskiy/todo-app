@@ -29,7 +29,7 @@ export default function HamburgerMenu() {
         <div className={`line ${isClicked ? 'open last' : ''}`}></div>
         {isClicked && (
         <div className="menu-list" style={menuStyles}>
-            <button className="switch-theme language" onClick={toggleLanguage}>{isEnglish? "Ukrainian" : "Англійська"}</button>
+            <button className="switch-theme language" onClick={toggleLanguage}>{isEnglish? "Українська" : "English"}</button>
             {displayedLinks}
             <a style={aStyles} href="https://github.com/Egor-Hrotskiy" target="_blank">Github</a>
         </div>
