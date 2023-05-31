@@ -1,6 +1,6 @@
 import React from "react";
 import "./WrongPage.css";
-import sadPenguin from "../assets/sadPenguin.gif"
+import sadPenguin from "../assets/sadpenguin.gif"
 import {Link} from "react-router-dom"
 import { useTheme, useUpdateTheme } from "../ThemeProvider";
 import { useLanguage } from "../LanguageProvider";
