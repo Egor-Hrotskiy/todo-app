@@ -52,6 +52,7 @@ function AdjustMenuNumber(props) {
     const inputStyles = {
          backgroundColor: isDarkTheme? "black" : "white",
          color: isDarkTheme? "white" : "black"
+                        }
     function handleBulletsCountChange(e) {
         e.target.value > 40? setBulletsCount(40) : setBulletsCount(e.target.value)
     }
