@@ -49,7 +49,9 @@ function HeaderChange(props) {
 function AdjustMenuNumber(props) {
     const isEnglish = useLanguage()
     const isDarkTheme = useTheme()
-
+    const inputStyles = {
+         backgroundColor: isDarkTheme? "black" : "white",
+         color: isDarkTheme? "white" : "black"
     function handleBulletsCountChange(e) {
         e.target.value > 40? setBulletsCount(40) : setBulletsCount(e.target.value)
     }
@@ -59,7 +61,7 @@ function AdjustMenuNumber(props) {
         <div className="adjustMenu">
             <div className="jad-1">
                 <img height={20} width={20} onClick={props.handleClick} src={isDarkTheme? closeDark : closeLight} alt="close button" className="closeBtn" />
-                <input type="number" value={bulletsCount} onChange={e => {handleBulletsCountChange(e)}} />
+                <input style={inputStyles} type="number" value={bulletsCount} onChange={e => {handleBulletsCountChange(e)}} />
                 </div>
             <button onClick={() => {props.handleListCreation(bulletsCount);setBulletsCount()}}>{isEnglish? "Create list" : "Створити список"}</button>
         </div>
